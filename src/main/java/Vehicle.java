@@ -3,7 +3,7 @@ public class Vehicle {
     int fuelcap;
     int mpg;
 
-    void range() {
-        System.out.println("The length - " + fuelcap * mpg + " mils.");
+    int range() {
+        return fuelcap * mpg;
     }
 }

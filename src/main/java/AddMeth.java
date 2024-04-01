@@ -11,7 +11,7 @@ public class AddMeth {
         sportcar.fuelcap = 14;
         sportcar.mpg = 12;
 
-        minivan.range();
-        sportcar.range();
+        System.out.println("Minivan can bring " + minivan.passengers + " to the distanse " + minivan.range() + " mils");
+        System.out.println("Sportcar can bring " + sportcar.passengers + " to the distanse " + sportcar.range() + " mils");
     }
 }
