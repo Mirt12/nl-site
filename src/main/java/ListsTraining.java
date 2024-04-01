@@ -19,8 +19,24 @@ public class ListsTraining {
         Collections.sort(cars);
         System.out.println(cars);
 
-        int i = cars.size() -1;
+        int i = cars.size() - 1;
         cars.remove(i);
         System.out.println(cars.size());
+        System.out.println("----------------");
+
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(205);
+        numbers.add(-1);
+        numbers.add(180);
+        numbers.add(0);
+        numbers.add(-180);
+
+        int maxNumber = -2_147_483_647;
+        for (int element : numbers) {
+            if (element > maxNumber)
+                maxNumber = element;
+        }
+        System.out.println(maxNumber);
     }
 }
